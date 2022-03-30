@@ -1,0 +1,134 @@
+//Colors
+$VeryDarkGrayBlue: hsl(217, 19%, 35%);
+$DesaturatedDarkBlue: hsl(214, 17%, 51%);
+$GrayishBlue: hsl(212, 23%, 69%);
+$LightGrayishBlue: hsl(210, 46%, 95%);
+
+//Font
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+$Manrope: "Manrope";
+$FontStandar: 13px;
+
+//Shared elements
+body {
+  margin: 0;
+}
+.main {
+  background-color: $LightGrayishBlue;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Card
+.card-container {
+  height: 40%;
+  width: 55%;
+  background-color: white;
+  box-shadow: 1px 1.5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.card-image-container {
+  height: 100%;
+  width: 44%;
+}
+
+//Card image
+.card-image {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+//Card text
+.card-text-container {
+  height: 100%;
+  width: 54%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-text {
+  height: 85%;
+  width: 90%;
+  margin-left: 5%;
+}
+.card-title {
+  color: $VeryDarkGrayBlue;
+  font-family: $Manrope;
+  font-weight: 700;
+  font-size: larger;
+  margin-bottom: 5%;
+}
+.card-text-body {
+  color: $GrayishBlue;
+  font-family: $Manrope;
+  font-size: $FontStandar;
+  margin-bottom: 5%;
+}
+
+//user
+.user-container {
+  display: flex;
+  flex-direction: row;
+  height: 25%;
+  justify-content: center;
+  align-items: center;
+}
+.user-image-container {
+  height: 100%;
+  width: 15%;
+}
+.user-image {
+  height: 100%;
+  border-radius: 100%;
+}
+.user-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+  font-family: $Manrope;
+  font-size: $FontStandar;
+}
+.user-name {
+  font-weight: 700;
+  color: $VeryDarkGrayBlue;
+}
+.user-post-date {
+  font-weight: 500;
+  color: $DesaturatedDarkBlue;
+}
+
+//Share button
+.shrbtn-main {
+  height: 60%;
+  width: 10%;
+  position: relative;
+  float: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+.shrbtn-container {
+  height: 100%;
+  background-color: $LightGrayishBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.shbtn-modal-container{
+    background-color: red;
+    position: absolute;
+    width: 200px;
+    top:-180%;
+    right: -200%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
