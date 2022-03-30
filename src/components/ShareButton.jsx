@@ -1,18 +1,31 @@
 import React, { useState } from "react";
 
 import shareIcon from "../images/icon-share.svg";
+import iconFacebook from "../images/icon-facebook.svg";
+import iconTwitter from "../images/icon-twitter.svg";
+import iconPinterest from "../images/icon-pinterest.svg";
 
 const ShareButton = () => {
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
 
-  const Test = () => {
+  const ShowShare = () => {
     if (active) {
       return (
-        <div className="shbtn-modal-container">
-          <p>S H A R E</p>
-          <p>F</p>
-          <p>T</p>
-          <p>P</p>
+        <div>
+          <i className="arrow down"></i>
+          <div className="shbtn-modal-container">
+            <p>S H A R E</p>
+            <span>
+              <img src={iconFacebook} alt="facebook" />
+            </span>
+            <span>
+              <img src={iconTwitter} alt="twitter" />
+            </span>
+            <span>
+              <img src={iconPinterest} alt="pinterest" />
+            </span>
+          </div>
+          
         </div>
       );
     }
@@ -21,7 +34,7 @@ const ShareButton = () => {
 
   return (
     <div className="shrbtn-main">
-      <Test />
+      <ShowShare />
 
       <div
         className="shrbtn-container"
